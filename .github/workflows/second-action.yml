@@ -1,0 +1,10 @@
+name: Second GitHub Action
+on: workflow_dispatch
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Multi line command exec to print greeting
+        run: |
+          echo "Hello World!"
+          echo "Done - bye!"
